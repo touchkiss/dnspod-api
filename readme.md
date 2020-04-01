@@ -8,5 +8,4 @@ DnspodClient client = DnspodClient.getClient("token,tokentokentokentokentokentok
 UserDetailRequest request = new UserDetailRequest();
 ### 3.获得结果
 UserDetailResponse userDetailResponse = client.doAction(request);
-
 ##现已支持官方所有用户api，点击查看<a href="https://www.dnspod.cn/docs/index.html">官方文档</a>
