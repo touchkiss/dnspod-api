@@ -74,7 +74,7 @@ public class DnspodClient implements BaseClient {
         return null;
     }
 
-    Map objectToMap(BaseRequest request) {
+    private Map objectToMap(BaseRequest request) {
         Map<String, Object> result = new HashMap<>();
         field(this, result, this.getClass().getDeclaredFields());
         Object cast = request.getRequestClass().cast(request);
@@ -82,7 +82,7 @@ public class DnspodClient implements BaseClient {
         return result;
     }
 
-    void field(Object object, Map<String, Object> result, Field[] fields) {
+    private void field(Object object, Map<String, Object> result, Field[] fields) {
         for (Field field : fields) {
             field.setAccessible(true);
             try {
