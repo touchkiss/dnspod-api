@@ -17,7 +17,7 @@ public class BatchDomainCreateRequest extends BaseRequest<BatchDomainCreateRespo
     /**
      * 为每个域名添加 @ 和 www 的 A 记录值，记录值为IP，可选，如果不传此参数或者传空，将只添加域名，不添加记录
      */
-    private String record_value ;
+    private String record_value;
 
     public String getDomains() {
         return domains;

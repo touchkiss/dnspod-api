@@ -20,13 +20,14 @@ public class DomainSearchenginepushResponse extends BaseResponse {
         }
         return null;
     }
-    public enum StatusCode{
-        _n15(-15,"域名已被封禁"),
-        _6(6,"域名ID错误"),
-        _7(7,"非域名所有者"),
-        _8(8,"域名无效"),
-        _13(13,"当前域名有误，请返回重新操作"),
-        _21(21,"域名被锁定");
+
+    public enum StatusCode {
+        _n15(-15, "域名已被封禁"),
+        _6(6, "域名ID错误"),
+        _7(7, "非域名所有者"),
+        _8(8, "域名无效"),
+        _13(13, "当前域名有误，请返回重新操作"),
+        _21(21, "域名被锁定");
         private int code;
         private String details;
 

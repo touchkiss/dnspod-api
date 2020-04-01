@@ -48,6 +48,35 @@ public class DomainListResponse extends BaseResponse {
         return null;
     }
 
+    public enum StatusCode {
+        _6(6, "记录开始的偏移无效"),
+        _7(7, "共要获取的记录的数量无效"),
+        _9(9, "没有任何域名");
+        private int code;
+        private String details;
+
+        StatusCode(int code, String details) {
+            this.code = code;
+            this.details = details;
+        }
+
+        public int getCode() {
+            return code;
+        }
+
+        public void setCode(int code) {
+            this.code = code;
+        }
+
+        public String getDetails() {
+            return details;
+        }
+
+        public void setDetails(String details) {
+            this.details = details;
+        }
+    }
+
     public static class InfoBean {
         /**
          * domain_total : 2
@@ -286,7 +315,7 @@ public class DomainListResponse extends BaseResponse {
          */
         private String ttl;
         /**
-         *  CNAME 加速状态
+         * CNAME 加速状态
          * “enable”: 已启用
          * “disable”: 已禁用
          */
@@ -323,7 +352,7 @@ public class DomainListResponse extends BaseResponse {
          */
         private String grade_title;
         /**
-         *  是否是VIP 等级
+         * 是否是VIP 等级
          * “yes”: 是 VIP
          * “no”: 不是 VIP
          */
@@ -532,35 +561,6 @@ public class DomainListResponse extends BaseResponse {
 
         public void setGrade_ns(List<String> grade_ns) {
             this.grade_ns = grade_ns;
-        }
-    }
-
-    public enum StatusCode {
-        _6(6, "记录开始的偏移无效"),
-        _7(7, "共要获取的记录的数量无效"),
-        _9(9, "没有任何域名");
-        private int code;
-        private String details;
-
-        StatusCode(int code, String details) {
-            this.code = code;
-            this.details = details;
-        }
-
-        public int getCode() {
-            return code;
-        }
-
-        public void setCode(int code) {
-            this.code = code;
-        }
-
-        public String getDetails() {
-            return details;
-        }
-
-        public void setDetails(String details) {
-            this.details = details;
         }
     }
 }

@@ -38,6 +38,36 @@ public class DomainInfoResponse extends BaseResponse {
         return null;
     }
 
+    public enum StatusCode {
+        _6(6, "域名ID错误"),
+        _7(7, "非域名所有者"),
+        _8(8, "非域名所有者"),
+        _13(13, "当前域名有误，请返回重新操作");
+        private int code;
+        private String details;
+
+        StatusCode(int code, String details) {
+            this.code = code;
+            this.details = details;
+        }
+
+        public int getCode() {
+            return code;
+        }
+
+        public void setCode(int code) {
+            this.code = code;
+        }
+
+        public String getDetails() {
+            return details;
+        }
+
+        public void setDetails(String details) {
+            this.details = details;
+        }
+    }
+
     public static class DomainBean {
         /**
          * id : 12600793
@@ -374,36 +404,6 @@ public class DomainInfoResponse extends BaseResponse {
 
         public void setDnspod_ns(List<String> dnspod_ns) {
             this.dnspod_ns = dnspod_ns;
-        }
-    }
-
-    public enum StatusCode {
-        _6(6, "域名ID错误"),
-        _7(7, "非域名所有者"),
-        _8(8, "非域名所有者"),
-        _13(13, "当前域名有误，请返回重新操作");
-        private int code;
-        private String details;
-
-        StatusCode(int code, String details) {
-            this.code = code;
-            this.details = details;
-        }
-
-        public int getCode() {
-            return code;
-        }
-
-        public void setCode(int code) {
-            this.code = code;
-        }
-
-        public String getDetails() {
-            return details;
-        }
-
-        public void setDetails(String details) {
-            this.details = details;
         }
     }
 }

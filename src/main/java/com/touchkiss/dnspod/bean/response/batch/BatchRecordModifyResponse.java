@@ -17,7 +17,7 @@ public class BatchRecordModifyResponse extends BaseResponse {
      * detail : [{"domain_id":92,"domain":"dnsapi1.cn","err_msg":null,"status":"waiting","operation":null,"records":[{"record_id":"36","sub_domain":"bbs","area":"默认","record_type":"CNAME","ttl":"600","value":"bbs.dnsapi2.com.","enabled":"1","status":"waiting","err_msg":null,"id":0,"operation":"edit"}],"domain_grade":"D_Plus","id":0},{"domain_id":171,"domain":"dnsapi1.cn","err_msg":null,"status":"waiting","operation":null,"records":[{"record_id":"90","sub_domain":"www","area":"电信","record_type":"A","ttl":"3600","value":"11.11.22.22","enabled":"1","status":"waiting","err_msg":null,"id":0,"operation":"edit"},{"record_id":"91","sub_domain":"@","area":"电信","record_type":"MX","ttl":"3600","value":"61.144.40.92.","enabled":"1","status":"waiting","mx":"5","err_msg":null,"id":1,"operation":"edit"}],"domain_grade":"D_Free","id":1}]
      */
     /**
-     *  任务ID，批量操作为异步执行，拿到 job_id 说明批量操作已经成功加入到任务队列，可通过 Batch.Detail 接口异步去查询执行结果
+     * 任务ID，批量操作为异步执行，拿到 job_id 说明批量操作已经成功加入到任务队列，可通过 Batch.Detail 接口异步去查询执行结果
      */
     private String job_id;
     /**

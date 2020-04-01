@@ -36,37 +36,6 @@ public class DomainaliasCreateResponse extends BaseResponse {
         return null;
     }
 
-    public static class AliasBean {
-        /**
-         * id : 18737
-         * punycode : dnspodapi.com
-         */
-        /**
-         * 域名别名绑定的 ID
-         */
-        private String id;
-        /**
-         * 别名绑定的域名
-         */
-        private String punycode;
-
-        public String getId() {
-            return id;
-        }
-
-        public void setId(String id) {
-            this.id = id;
-        }
-
-        public String getPunycode() {
-            return punycode;
-        }
-
-        public void setPunycode(String punycode) {
-            this.punycode = punycode;
-        }
-    }
-
     public enum StatusCode {
         _n15(-15, "域名已被封禁"),
         _6(6, "域名ID错误"),
@@ -98,6 +67,37 @@ public class DomainaliasCreateResponse extends BaseResponse {
 
         public void setDetails(String details) {
             this.details = details;
+        }
+    }
+
+    public static class AliasBean {
+        /**
+         * id : 18737
+         * punycode : dnspodapi.com
+         */
+        /**
+         * 域名别名绑定的 ID
+         */
+        private String id;
+        /**
+         * 别名绑定的域名
+         */
+        private String punycode;
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        public String getPunycode() {
+            return punycode;
+        }
+
+        public void setPunycode(String punycode) {
+            this.punycode = punycode;
         }
     }
 }

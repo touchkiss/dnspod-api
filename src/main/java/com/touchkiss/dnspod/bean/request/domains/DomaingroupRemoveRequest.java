@@ -12,7 +12,7 @@ import com.touchkiss.dnspod.constants.URLConstants;
 public class DomaingroupRemoveRequest extends BaseRequest<DomaingroupRemoveResponse> {
     /**
      * 必须
-     * 	要删除的分组ID
+     * 要删除的分组ID
      */
     private String group_id;
 

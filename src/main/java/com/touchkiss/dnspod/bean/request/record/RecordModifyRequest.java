@@ -11,48 +11,48 @@ import com.touchkiss.dnspod.constants.URLConstants;
  */
 public class RecordModifyRequest extends BaseRequest<RecordModifyResponse> {
     /**
-     *  或 domain, 分别对应域名ID和域名, 提交其中一个即可
+     * 或 domain, 分别对应域名ID和域名, 提交其中一个即可
      */
     private int domain_id;
     private String domain;
     /**
-     *  记录ID，必选
+     * 记录ID，必选
      */
     private int record_id;
     /**
-     *  主机记录, 如 www，可选，如果不传，默认为 @
+     * 主机记录, 如 www，可选，如果不传，默认为 @
      */
     private String sub_domain;
     /**
-     *  记录类型，通过API记录类型获得，大写英文，比如：A，必选
+     * 记录类型，通过API记录类型获得，大写英文，比如：A，必选
      */
     private String record_type;
     /**
-     *  记录线路，通过API记录线路获得，中文，比如：默认，必选
+     * 记录线路，通过API记录线路获得，中文，比如：默认，必选
      */
     private String record_line;
     /**
-     *  线路的ID，通过API记录线路获得，英文字符串，比如：‘10=1’ 【record_line 和 record_line_id 二者传其一即可，系统优先取 record_line_id】
+     * 线路的ID，通过API记录线路获得，英文字符串，比如：‘10=1’ 【record_line 和 record_line_id 二者传其一即可，系统优先取 record_line_id】
      */
     private String record_line_id;
     /**
-     *  记录值, 如 IP:200.200.200.200, CNAME: cname.dnspod.com., MX: mail.dnspod.com.，必选
+     * 记录值, 如 IP:200.200.200.200, CNAME: cname.dnspod.com., MX: mail.dnspod.com.，必选
      */
     private String value;
     /**
-     *  {1-20} MX优先级, 当记录类型是 MX 时有效，范围1-20, mx记录必选
+     * {1-20} MX优先级, 当记录类型是 MX 时有效，范围1-20, mx记录必选
      */
     private int mx;
     /**
-     *  {1-604800} TTL，范围1-604800，不同等级域名最小值不同，可选
+     * {1-604800} TTL，范围1-604800，不同等级域名最小值不同，可选
      */
     private int ttl;
     /**
-     *  [“enable”, “disable”]，记录状态，默认为”enable”，如果传入”disable”，解析不会生效，也不会验证负载均衡的限制，可选
+     * [“enable”, “disable”]，记录状态，默认为”enable”，如果传入”disable”，解析不会生效，也不会验证负载均衡的限制，可选
      */
     private String status;
     /**
-     *  权重信息，0到100的整数，可选。仅企业 VIP 域名可用，0 表示关闭，留空或者不传该参数，表示不设置权重信息
+     * 权重信息，0到100的整数，可选。仅企业 VIP 域名可用，0 表示关闭，留空或者不传该参数，表示不设置权重信息
      */
     private int weight;
 

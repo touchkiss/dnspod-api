@@ -36,24 +36,6 @@ public class DomaingroupCreateResponse extends BaseResponse {
         return null;
     }
 
-    public static class GroupsBean {
-        /**
-         * id : 1985
-         */
-        /**
-         * 域名分组的 ID
-         */
-        private String id;
-
-        public String getId() {
-            return id;
-        }
-
-        public void setId(String id) {
-            this.id = id;
-        }
-    }
-
     public enum StatusCode {
         _7(7, "分组名称错误"),
         _8(8, "分组名称已经存在"),
@@ -80,6 +62,24 @@ public class DomaingroupCreateResponse extends BaseResponse {
 
         public void setDetails(String details) {
             this.details = details;
+        }
+    }
+
+    public static class GroupsBean {
+        /**
+         * id : 1985
+         */
+        /**
+         * 域名分组的 ID
+         */
+        private String id;
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
         }
     }
 }

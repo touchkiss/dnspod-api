@@ -86,7 +86,7 @@ public class RecordInfoResponse extends BaseResponse {
          * dnspod_ns : ["ns3.dnsv3.com","ns4.dnsv3.com"]
          */
         /**
-         *  域名ID，即为 domain_id
+         * 域名ID，即为 domain_id
          */
         private String id;
         /**
@@ -157,7 +157,7 @@ public class RecordInfoResponse extends BaseResponse {
          */
         private String id;
         /**
-         *  子域名(主机记录)
+         * 子域名(主机记录)
          */
         private String sub_domain;
         /**

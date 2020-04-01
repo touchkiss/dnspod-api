@@ -11,32 +11,32 @@ import com.touchkiss.dnspod.constants.URLConstants;
  */
 public class RecordListRequest extends BaseRequest<RecordListResponse> {
     /**
-     *  或 domain, 分别对应域名ID和域名, 提交其中一个即可
+     * 或 domain, 分别对应域名ID和域名, 提交其中一个即可
      */
     private int domain_id;
     private String domain;
     /**
-     *  记录开始的偏移，第一条记录为 0，依次类推，可选（仅当指定 length 参数时才生效）
+     * 记录开始的偏移，第一条记录为 0，依次类推，可选（仅当指定 length 参数时才生效）
      */
     private int offset;
     /**
-     *  共要获取的记录数量的最大值，比如最多获取20条，则为20，最大3000.可选
+     * 共要获取的记录数量的最大值，比如最多获取20条，则为20，最大3000.可选
      */
     private int length;
     /**
-     *  子域名，如果指定则只返回此子域名的记录，可选
+     * 子域名，如果指定则只返回此子域名的记录，可选
      */
     private String sub_domain;
     /**
-     *  记录类型，通过API记录类型获得，大写英文，比如：A，可选
+     * 记录类型，通过API记录类型获得，大写英文，比如：A，可选
      */
     private String record_type;
     /**
-     *  记录线路，通过API记录线路获得，中文，比如：默认，可选
+     * 记录线路，通过API记录线路获得，中文，比如：默认，可选
      */
     private String record_line;
     /**
-     *  线路的ID，通过API记录线路获得，英文字符串，比如：‘10=1’，可选 【需要获取特定线路的解析记录时，record_line 和 record_line_id 二者传其一即可，系统优先取 record_line_id】
+     * 线路的ID，通过API记录线路获得，英文字符串，比如：‘10=1’，可选 【需要获取特定线路的解析记录时，record_line 和 record_line_id 二者传其一即可，系统优先取 record_line_id】
      */
     private String record_line_id;
     /**

@@ -8,6 +8,12 @@ import com.touchkiss.dnspod.bean.response.BaseResponse;
  * @author Touchkiss
  */
 public class MonitorCreateResponse extends BaseResponse {
+    /**
+     * monitor : {"monitor_id":"6aac176e-363a-11e2-bab7-0819a6248970","record_id":16909160}
+     */
+
+    private MonitorBean monitor;
+
     @Override
     public String statusDetail() {
         String msg = super.statusDetail();
@@ -19,6 +25,14 @@ public class MonitorCreateResponse extends BaseResponse {
             }
         }
         return null;
+    }
+
+    public MonitorBean getMonitor() {
+        return monitor;
+    }
+
+    public void setMonitor(MonitorBean monitor) {
+        this.monitor = monitor;
     }
 
     public enum StatusCode {
@@ -62,20 +76,6 @@ public class MonitorCreateResponse extends BaseResponse {
         public void setDetails(String details) {
             this.details = details;
         }
-    }
-
-    /**
-     * monitor : {"monitor_id":"6aac176e-363a-11e2-bab7-0819a6248970","record_id":16909160}
-     */
-
-    private MonitorBean monitor;
-
-    public MonitorBean getMonitor() {
-        return monitor;
-    }
-
-    public void setMonitor(MonitorBean monitor) {
-        this.monitor = monitor;
     }
 
     public static class MonitorBean {

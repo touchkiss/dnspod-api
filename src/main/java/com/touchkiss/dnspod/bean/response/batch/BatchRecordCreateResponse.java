@@ -1,6 +1,5 @@
 package com.touchkiss.dnspod.bean.response.batch;
 
-import com.google.gson.annotations.SerializedName;
 import com.touchkiss.dnspod.bean.response.BaseResponse;
 
 import java.util.List;

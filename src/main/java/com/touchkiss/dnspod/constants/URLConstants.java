@@ -1,6 +1,5 @@
 package com.touchkiss.dnspod.constants;
 
-import com.touchkiss.dnspod.BaseClient;
 import org.apache.http.client.methods.HttpPost;
 
 /**
@@ -31,7 +30,7 @@ public enum URLConstants {
      * 响应代码：
      * 共通返回
      */
-    USER_DETAIL(HttpPost.METHOD_NAME,"https://dnsapi.cn/User.Detail","获取帐户信息"),
+    USER_DETAIL(HttpPost.METHOD_NAME, "https://dnsapi.cn/User.Detail", "获取帐户信息"),
     /**
      * 接口地址：
      * https://dnsapi.cn/User.Log
@@ -43,7 +42,7 @@ public enum URLConstants {
      * 响应代码：
      * 共通返回
      */
-    USER_LOG(HttpPost.METHOD_NAME,"https://dnsapi.cn/User.Log","获取用户日志"),
+    USER_LOG(HttpPost.METHOD_NAME, "https://dnsapi.cn/User.Log", "获取用户日志"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Create
@@ -62,7 +61,7 @@ public enum URLConstants {
      * 11 域名已经存在并且是其它域名的别名
      * 12 域名已经存在并且您没有权限管理
      */
-    DOMAIN_CREATE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Create","添加新域名"),
+    DOMAIN_CREATE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Create", "添加新域名"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.List
@@ -93,7 +92,7 @@ public enum URLConstants {
      * 7 共要获取的记录的数量无效
      * 9 没有任何域名
      */
-    DOMAIN_LIST(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.List","获取域名列表"),
+    DOMAIN_LIST(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.List", "获取域名列表"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Remove
@@ -112,7 +111,7 @@ public enum URLConstants {
      * 13 当前域名有误，请返回重新操作
      * 21 域名已锁定
      */
-    DOMAIN_REMOVE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Remove","删除域名"),
+    DOMAIN_REMOVE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Remove", "删除域名"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Status
@@ -132,7 +131,7 @@ public enum URLConstants {
      * 13 当前域名有误，请返回重新操作
      * 21 域名被锁定
      */
-    DOMAIN_STATUS(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Status","设置域名状态"),
+    DOMAIN_STATUS(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Status", "设置域名状态"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Info
@@ -149,7 +148,7 @@ public enum URLConstants {
      * 8 非域名所有者
      * 13 当前域名有误，请返回重新操作
      */
-    DOMAIN_INFO(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Info","获取域名信息"),
+    DOMAIN_INFO(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Info", "获取域名信息"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Log
@@ -168,7 +167,7 @@ public enum URLConstants {
      * 7 非域名所有者
      * 8 域名无效
      */
-    DOMAIN_LOG(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Log","获取域名日志"),
+    DOMAIN_LOG(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Log", "获取域名日志"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Searchenginepush
@@ -188,7 +187,7 @@ public enum URLConstants {
      * 13 当前域名有误，请返回重新操作
      * 21 域名被锁定
      */
-    DOMAIN_SEARCHENGINEPUSH(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Searchenginepush","设置搜索引擎推送"),
+    DOMAIN_SEARCHENGINEPUSH(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Searchenginepush", "设置搜索引擎推送"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domainshare.Create
@@ -214,7 +213,7 @@ public enum URLConstants {
      * 24 泛解析级数超出限制
      * 75 子域名共享数量超出了限制
      */
-    DOMAIN_SHARE_CREATE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domainshare.Create","添加域名共享"),
+    DOMAIN_SHARE_CREATE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domainshare.Create", "添加域名共享"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domainshare.List
@@ -231,7 +230,7 @@ public enum URLConstants {
      * 8 域名无效、VIP域名不可以删除
      * 13 当前域名有误，请返回重新操作
      */
-    DOMAIN_SHARE_LIST(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domainshare.List","域名共享列表"),
+    DOMAIN_SHARE_LIST(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domainshare.List", "域名共享列表"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domainshare.Modify
@@ -257,10 +256,10 @@ public enum URLConstants {
      * 23 子域名级数超出限制
      * 24 泛解析级数超出限制
      */
-    DOMAIN_SHARE_MODIFY(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domainshare.Modify","修改域名共享"),
+    DOMAIN_SHARE_MODIFY(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domainshare.Modify", "修改域名共享"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Domainshare.Remove
+     * https://dnsapi.cn/Domainshare.Remove
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -277,7 +276,7 @@ public enum URLConstants {
      * 13 当前域名有误，请返回重新操作
      * 21 域名被锁定
      */
-    DOMAIN_SHARE_REMOVE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domainshare.Remove","删除域名共享"),
+    DOMAIN_SHARE_REMOVE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domainshare.Remove", "删除域名共享"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Transfer
@@ -300,7 +299,7 @@ public enum URLConstants {
      * 103 email输入不正确
      * 1008 用户不存在
      */
-    DOMAIN_TRANSFER(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Transfer","域名过户"),
+    DOMAIN_TRANSFER(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Transfer", "域名过户"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Lock
@@ -321,7 +320,7 @@ public enum URLConstants {
      * 13 当前域名有误，请返回重新操作
      * 21 域名已经被锁定
      */
-    DOMAIN_LOCK(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Lock","锁定域名"),
+    DOMAIN_LOCK(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Lock", "锁定域名"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Unlock
@@ -342,7 +341,7 @@ public enum URLConstants {
      * 13 当前域名有误，请返回重新操作
      * 21 域名已经被锁定
      */
-    DOMAIN_UNLOCK(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Unlock","域名锁定解锁"),
+    DOMAIN_UNLOCK(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Unlock", "域名锁定解锁"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domainalias.List
@@ -359,7 +358,7 @@ public enum URLConstants {
      * 8 域名无效
      * 13 当前域名有误，请返回重新操作
      */
-    DOMAIN_ALIAS_LIST(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domainalias.List","域名绑定列表"),
+    DOMAIN_ALIAS_LIST(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domainalias.List", "域名绑定列表"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domainalias.Create
@@ -382,7 +381,7 @@ public enum URLConstants {
      * 13 当前域名有误，请返回重新操作/li>
      * 21 域名被锁定
      */
-    DOMAIN_ALIAS_CREATE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domainalias.Create","添加域名绑定"),
+    DOMAIN_ALIAS_CREATE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domainalias.Create", "添加域名绑定"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domainalias.Remove
@@ -402,7 +401,7 @@ public enum URLConstants {
      * 13 当前域名有误，请返回重新操作
      * 21 域名被锁定
      */
-    DOMAIN_ALIAS_REMOVE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domainalias.Remove","删除域名绑定"),
+    DOMAIN_ALIAS_REMOVE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domainalias.Remove", "删除域名绑定"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domaingroup.List
@@ -414,7 +413,7 @@ public enum URLConstants {
      * 响应代码：
      * 共通返回
      */
-    DOMAIN_GROUP_LIST(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domaingroup.List","获取域名分组"),
+    DOMAIN_GROUP_LIST(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domaingroup.List", "获取域名分组"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domaingroup.Create
@@ -431,7 +430,7 @@ public enum URLConstants {
      * 8 分组名称已经存在
      * 9 分组数量超出限制
      */
-    DOMAIN_GROUP_CREATE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domaingroup.Create","添加域名分组"),
+    DOMAIN_GROUP_CREATE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domaingroup.Create", "添加域名分组"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domaingroup.Modify
@@ -449,7 +448,7 @@ public enum URLConstants {
      * 8 分组名称已经存在
      * 9 分组数量超出限制
      */
-    DOMAIN_GROUP_MODIFY(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domaingroup.Modify","修改域名分组"),
+    DOMAIN_GROUP_MODIFY(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domaingroup.Modify", "修改域名分组"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domaingroup.Remove
@@ -463,12 +462,12 @@ public enum URLConstants {
      * 共通返回
      * 6 分组ID错误
      */
-    DOMAIN_GROUP_REMOVE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domaingroup.Remove","删除域名分组"),
+    DOMAIN_GROUP_REMOVE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domaingroup.Remove", "删除域名分组"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Changegroup
      * 说明：
-     *
+     * <p>
      * 其它用户共享过来的域名全在“与我共享”系统分组下, 不能更改
      * 只有域名所有者可以更改域名的分组, 被共享者不能更改
      * HTTP请求方式：
@@ -486,7 +485,7 @@ public enum URLConstants {
      * 8 域名无效
      * 13 当前域名有误，请返回重新操作
      */
-    DOMAIN_CHANFGE_GROUP(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Changegroup","设置域名分组"),
+    DOMAIN_CHANFGE_GROUP(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Changegroup", "设置域名分组"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Ismark
@@ -506,7 +505,7 @@ public enum URLConstants {
      * 13 当前域名有误，请返回重新操作
      * 21 域名已锁定
      */
-    DOMAIN_ISMARK(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Ismark","设置域名星标"),
+    DOMAIN_ISMARK(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Ismark", "设置域名星标"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Remark
@@ -521,7 +520,7 @@ public enum URLConstants {
      * 共通返回
      * 6 域名ID错误
      */
-    DOMAIN_REMARK(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Remark","设置域名备注"),
+    DOMAIN_REMARK(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Remark", "设置域名备注"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Domain.Purview
@@ -543,11 +542,11 @@ public enum URLConstants {
      * 13 当前域名有误，请返回重新操作
      * 21 域名已锁定
      */
-    DOMAIN_PURVIEW(HttpPost.METHOD_NAME,"https://dnsapi.cn/Domain.Purview","获取域名权限"),
+    DOMAIN_PURVIEW(HttpPost.METHOD_NAME, "https://dnsapi.cn/Domain.Purview", "获取域名权限"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Record.Type
-     *  说明：
+     * https://dnsapi.cn/Record.Type
+     * 说明：
      * 如果域名等级没有变更，则每次返回的允许的记录类型都是一致的，建议获取成功后在本地保存一份, 不要用一次就请求一次
      * HTTP请求方式：
      * POST
@@ -565,11 +564,11 @@ public enum URLConstants {
      * 8 域名无效
      * 13 当前域名有误，请返回重新操作
      */
-    RECORD_TYPE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Record.Type","获取等级允许的记录类型"),
+    RECORD_TYPE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Record.Type", "获取等级允许的记录类型"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Record.Line
-     *  说明：
+     * https://dnsapi.cn/Record.Line
+     * 说明：
      * 如果域名等级没有变更，则每次返回的允许的线路都是一致的，建议获取成功后在本地保存一份, 不要用一次就请求一次
      * line_ids 为新增的返回字段，对应关系为: 中文线路名称：线路ID，支持在创建、修改解析记录的时候传入线路ID，解决之前部分开发者存在的中文编码问题
      * HTTP请求方式：
@@ -590,7 +589,7 @@ public enum URLConstants {
      * 8 域名无效
      * 13 当前域名有误，请返回重新操作
      */
-    RECORD_LINE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Record.Line","获取等级允许的线路"),
+    RECORD_LINE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Record.Line", "获取等级允许的线路"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Record.Create
@@ -636,7 +635,7 @@ public enum URLConstants {
      * 104 记录已存在无需添加
      * 110 域名没有备案（显性URL和隐形URL类型）
      */
-    RECORD_CREATE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Record.Create","添加记录"),
+    RECORD_CREATE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Record.Create", "添加记录"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Record.List
@@ -662,11 +661,11 @@ public enum URLConstants {
      * 注意事项：
      * 如果域名的记录数量超过了100，将会强制分页并且只返回前100条，这时需要通过 offset 和 length 参数去获取其它记录。
      */
-    RECORD_LIST(HttpPost.METHOD_NAME,"https://dnsapi.cn/Record.List","记录列表"),
+    RECORD_LIST(HttpPost.METHOD_NAME, "https://dnsapi.cn/Record.List", "记录列表"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Record.Modify
-     *  注意：
+     * https://dnsapi.cn/Record.Modify
+     * 注意：
      * record_line_id 形如 “10=3”，其中可能会包含等号，即 “=”，如果是通过类似 URL 传递参数，需要将 ‘=’ 转义成 ‘%3D’
      * HTTP请求方式：
      * POST
@@ -711,10 +710,10 @@ public enum URLConstants {
      * 注意事项：
      * 如果1小时之内，提交了超过5次没有任何变动的记录修改请求，该记录会被系统锁定1小时，不允许再次修改。比如原记录值已经是 1.1.1.1，新的请求还要求修改为 1.1.1.1。
      */
-    RECORD_MODIFY(HttpPost.METHOD_NAME,"https://dnsapi.cn/Record.Modify","修改记录"),
+    RECORD_MODIFY(HttpPost.METHOD_NAME, "https://dnsapi.cn/Record.Modify", "修改记录"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Record.Remove
+     * https://dnsapi.cn/Record.Remove
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -731,11 +730,11 @@ public enum URLConstants {
      * 17 记录的值不正确
      * 21 域名被锁定
      */
-    RECORD_REMOVE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Record.Remove","删除记录"),
+    RECORD_REMOVE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Record.Remove", "删除记录"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Record.Ddns
-     *  注意：
+     * https://dnsapi.cn/Record.Ddns
+     * 注意：
      * record_line_id 形如 “10=3”，其中可能会包含等号，即 “=”，如果是通过类似 URL 传递参数，需要将 ‘=’ 转义成 ‘%3D’
      * HTTP请求方式：
      * POST
@@ -765,10 +764,10 @@ public enum URLConstants {
      * 如果1小时之内，提交了超过5次没有任何变动的记录修改请求，该记录会被系统锁定1小时，不允许再次修改，所以在开发和测试的过程中，请自行处理IP变动，仅在本地IP发生变动的情况下才调用本接口。
      * 如何理解没有任何变动的记录修改请求？比如原记录值已经是 1.1.1.1，新的请求还要求修改为 1.1.1.1。
      */
-    RECORD_DDNS(HttpPost.METHOD_NAME,"https://dnsapi.cn/Record.Ddns","更新动态DNS记录"),
+    RECORD_DDNS(HttpPost.METHOD_NAME, "https://dnsapi.cn/Record.Ddns", "更新动态DNS记录"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Record.Remark
+     * https://dnsapi.cn/Record.Remark
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -783,10 +782,10 @@ public enum URLConstants {
      * 8 域名无效
      * 13 当前域名有误，请返回重新操作
      */
-    RECORD_REMARK(HttpPost.METHOD_NAME,"https://dnsapi.cn/Record.Remark","设置记录备注"),
+    RECORD_REMARK(HttpPost.METHOD_NAME, "https://dnsapi.cn/Record.Remark", "设置记录备注"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Record.Info
+     * https://dnsapi.cn/Record.Info
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -800,10 +799,10 @@ public enum URLConstants {
      * 8 域名无效
      * 13 当前域名有误，请返回重新操作
      */
-    RECORD_INFO(HttpPost.METHOD_NAME,"https://dnsapi.cn/Record.Info","获取记录信息"),
+    RECORD_INFO(HttpPost.METHOD_NAME, "https://dnsapi.cn/Record.Info", "获取记录信息"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Record.Status
+     * https://dnsapi.cn/Record.Status
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -831,7 +830,7 @@ public enum URLConstants {
      * 82 不能添加黑名单中的IP
      * 110 域名没有备案（显性URL和隐形URL类型）
      */
-    RECORD_STATUS(HttpPost.METHOD_NAME,"https://dnsapi.cn/Record.Status","设置记录状态"),
+    RECORD_STATUS(HttpPost.METHOD_NAME, "https://dnsapi.cn/Record.Status", "设置记录状态"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Batch.Domain.Create
@@ -844,7 +843,7 @@ public enum URLConstants {
      * 响应代码：
      * 共通返回【具体错误信息参见 message 字段】
      */
-    BATCH_DOMAIN_CREATE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Batch.Domain.Create","批量添加域名"),
+    BATCH_DOMAIN_CREATE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Batch.Domain.Create", "批量添加域名"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Batch.Record.Create
@@ -852,16 +851,16 @@ public enum URLConstants {
      * POST
      * 请求参数：
      * 公共参数
-     *
+     * <p>
      * domain_id 域名ID，多个 domain_id 用英文逗号进行分割
-     *
+     * <p>
      * records 待批量添加的记录详情，JSON 字符串。形如：
      * [{“sub_domain”:”www,wap,bbs”,”record_type”:”A”,”record_line”:”默认”,”value”:”11.22.33.44”,”ttl”:600}]
      * [{“sub_domain”:”www,wap,bbs”,”record_type”:”A”,”record_line”:”默认”,”value”:”11.22.33.44”,”ttl”:600},{“sub_domain”:””,”record_type”:”MX”,”record_line”:”默认”,”value”:”mx.qq.com”,”ttl”:600,”MX”:10}]
      * 响应代码：
      * 共通返回【具体错误信息参见 message 字段】
      */
-    BATCH_RECORD_CREATE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Batch.Record.Create","批量添加记录"),
+    BATCH_RECORD_CREATE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Batch.Record.Create", "批量添加记录"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Batch.Detail
@@ -874,7 +873,7 @@ public enum URLConstants {
      * 共通返回
      * 8 数据为空，没有查到该任务
      */
-    BATCH_DETAIL(HttpPost.METHOD_NAME,"https://dnsapi.cn/Batch.Detail","获取任务详情"),
+    BATCH_DETAIL(HttpPost.METHOD_NAME, "https://dnsapi.cn/Batch.Detail", "获取任务详情"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Batch.Record.Modify
@@ -890,10 +889,10 @@ public enum URLConstants {
      * 响应代码：
      * 共通返回【具体错误信息参见 message 字段】
      */
-    BATCH_RECORD_MODIFY(HttpPost.METHOD_NAME,"https://dnsapi.cn/Batch.Record.Modify","批量修改记录"),
+    BATCH_RECORD_MODIFY(HttpPost.METHOD_NAME, "https://dnsapi.cn/Batch.Record.Modify", "批量修改记录"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Monitor.Listsubdomain
+     * https://dnsapi.cn/Monitor.Listsubdomain
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -905,10 +904,10 @@ public enum URLConstants {
      * 7 域名编号错误
      * 8 此域名没有任何记录
      */
-    MONITOR_LIST_SUBDOMAIN(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.Listsubdomain","列出包含A记录的子域名"),
+    MONITOR_LIST_SUBDOMAIN(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.Listsubdomain", "列出包含A记录的子域名"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Monitor.Listsubvalue
+     * https://dnsapi.cn/Monitor.Listsubvalue
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -920,10 +919,10 @@ public enum URLConstants {
      * 6 当前域名有误，请返回重新操作
      * 7 域名编号错误
      */
-    MONITOR_LIST_SUBVALUE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.Listsubvalue","列出子域名的A记录"),
+    MONITOR_LIST_SUBVALUE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.Listsubvalue", "列出子域名的A记录"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Monitor.List
+     * https://dnsapi.cn/Monitor.List
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -931,31 +930,31 @@ public enum URLConstants {
      * 响应代码：
      * 共通返回
      */
-    MONITOR_LIST(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.List","监控列表"),
+    MONITOR_LIST(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.List", "监控列表"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Monitor.Create
+     * https://dnsapi.cn/Monitor.Create
      * HTTP请求方式：
      * POST
      * 请求参数：
      * 公共参数
-     *
+     * <p>
      * domain_id 域名编号，必选
-     *
+     * <p>
      * record_id 记录编号，必选
-     *
+     * <p>
      * port 监控端口，比如80，必选
-     *
+     * <p>
      * monitor_interval 监控间隔，支持{60|180|360|}，必选
-     *
+     * <p>
      * host 监控主机头，比如 www.dnspod.cn，必选
-     *
+     * <p>
      * monitor_type 监控类型，支持{http|https|cname|url}，必选
-     *
+     * <p>
      * monitor_path 监控路径，比如/，必选
-     *
+     * <p>
      * points 监控节点，用,分隔多个，只能选择列表中的节点，并且有数量限制，必选。支持的节点有（ctc: 上海电信, cuc: 深圳联通, ctc-2: 深圳电信, cuc-2: 上海联通, cmc-2: 深圳移动, ctc-3: 成都电信, cuc-4: 天津联通, cmc-4: 天津移动）
-     *
+     * <p>
      * bak_ip 宕机备用，必选，支持任选以下选项中的一个：
      * pass 只监控，不切换
      * pause 老版智能暂停功能，详见https://support.dnspod.cn/Kb/showarticle/tsid/179
@@ -963,17 +962,17 @@ public enum URLConstants {
      * auto 智能切换
      * 用逗号分隔的IP 设置备用IP
      * keep_ttl {yes|no} 宕机切换后是否修改ttl，可选，默认为 no
-     *
+     * <p>
      * sms_notice 短信通知，me域名所有者，share共享用户，用,分隔多选择，比如me,share, 可选
-     *
+     * <p>
      * email_notice 邮件通知，me域名所有者，share共享用户，用,分隔多选择，比如me,share，可选
-     *
+     * <p>
      * less_notice {yes|no}是否一个小时内只发一次通知，可选
-     *
+     * <p>
      * callback_url 可选，回调URL，宕机了会将相关的参数提交到此设置的URL，具体参考回调URL说明，可选
-     *
+     * <p>
      * callback_key 可选，回调密钥，如果设置了回调URL请设置此参数以保证安全，可选
-     *
+     * <p>
      * 响应代码：
      * 共通返回
      * 6 域名编号错误
@@ -994,27 +993,27 @@ public enum URLConstants {
      * 21 监控数量超出限制
      * 22 回调URL不正确
      */
-    MONITOR_CREATE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.Create","监控添加"),
+    MONITOR_CREATE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.Create", "监控添加"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Monitor.Modify
+     * https://dnsapi.cn/Monitor.Modify
      * HTTP请求方式：
      * POST
      * 请求参数：
      * 公共参数
-     *
+     * <p>
      * monitor_id 监控编号，必选
-     *
+     * <p>
      * port 监控端口，比如80，必选
-     *
+     * <p>
      * monitor_interval 监控间隔，支持{60|180|360|}，必选
-     *
+     * <p>
      * monitor_type 监控类型，支持{http|https|cname|url}，必选
-     *
+     * <p>
      * monitor_path 监控路径，比如/，必选
-     *
+     * <p>
      * points 监控节点，用,分隔多个，只能选择列表中的节点，并且有数量限制，必选
-     *
+     * <p>
      * bak_ip 宕机备用，必选，支持任选以下选项中的一个：
      * pass 只监控，不切换
      * pause 老版智能暂停功能，详见https://support.dnspod.cn/Kb/showarticle/tsid/179
@@ -1022,19 +1021,19 @@ public enum URLConstants {
      * auto 智能切换
      * 用逗号分隔的IP 设置备用IP
      * host 监控主机头，比如 www.dnspod.cn，可选
-     *
+     * <p>
      * keep_ttl {yes|no} 宕机切换后是否修改ttl，可选，默认为 no
-     *
+     * <p>
      * sms_notice 短信通知，me域名所有者，share共享用户，用,分隔多选择，比如me,share, 可选
-     *
+     * <p>
      * email_notice 邮件通知，me域名所有者，share共享用户，用,分隔多选择，比如me,share，可选
-     *
+     * <p>
      * less_notice {yes|no}是否一个小时内只发一次通知，可选
-     *
+     * <p>
      * callback_url 可选，回调URL，宕机了会将相关的参数提交到此设置的URL，具体参考回调URL说明，可选
-     *
+     * <p>
      * callback_key 可选，回调密钥，如果设置了回调URL请设置此参数以保证安全，可选
-     *
+     * <p>
      * 响应代码：
      * 共通返回
      * 7 监控编号错误
@@ -1052,10 +1051,10 @@ public enum URLConstants {
      * 19 邮件设置不正确
      * 22 回调URL不正确
      */
-    MONITOR_MODIFY(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.Modify","监控修改"),
+    MONITOR_MODIFY(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.Modify", "监控修改"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Monitor.Remove
+     * https://dnsapi.cn/Monitor.Remove
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -1065,7 +1064,7 @@ public enum URLConstants {
      * 共通返回
      * 6 监控编号错误
      */
-    MONITOR_REMOVE(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.Remove","监控删除"),
+    MONITOR_REMOVE(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.Remove", "监控删除"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Monitor.Info
@@ -1078,10 +1077,10 @@ public enum URLConstants {
      * 共通返回
      * 7 监控编号错误
      */
-    MONITOR_INFO(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.Info","获取监控信息"),
+    MONITOR_INFO(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.Info", "获取监控信息"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Monitor.Setstatus
+     * https://dnsapi.cn/Monitor.Setstatus
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -1095,10 +1094,10 @@ public enum URLConstants {
      * 8 请先启用域名
      * 9 请先启用记录
      */
-    MONITOR_SET_STATUS(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.Setstatus","设置监控状态"),
+    MONITOR_SET_STATUS(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.Setstatus", "设置监控状态"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Monitor.Gethistory
+     * https://dnsapi.cn/Monitor.Gethistory
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -1109,7 +1108,7 @@ public enum URLConstants {
      * 共通返回
      * 6 监控编号错误
      */
-    MONITOR_GETHISTORY(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.Gethistory","获取监控历史"),
+    MONITOR_GETHISTORY(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.Gethistory", "获取监控历史"),
     /**
      * 接口地址：
      * https://dnsapi.cn/Monitor.Userdesc
@@ -1120,10 +1119,10 @@ public enum URLConstants {
      * 响应代码：
      * 共通返回
      */
-    MONITOR_USERDESC(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.Userdesc","获取监控概况"),
+    MONITOR_USERDESC(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.Userdesc", "获取监控概况"),
     /**
      * 接口地址：
-     *  https://dnsapi.cn/Monitor.Getdowns
+     * https://dnsapi.cn/Monitor.Getdowns
      * HTTP请求方式：
      * POST
      * 请求参数：
@@ -1133,7 +1132,7 @@ public enum URLConstants {
      * 响应代码：
      * 共通返回
      */
-    MONITOR_GET_DOWNS(HttpPost.METHOD_NAME,"https://dnsapi.cn/Monitor.Getdowns","获取监控警告");
+    MONITOR_GET_DOWNS(HttpPost.METHOD_NAME, "https://dnsapi.cn/Monitor.Getdowns", "获取监控警告");
 
     private String method;
     private String url;

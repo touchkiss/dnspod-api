@@ -13,7 +13,7 @@ public class MonitorRemoveRequest extends BaseRequest<MonitorRemoveResponse> {
     /**
      * 监控编号
      */
-    private String monitor_id ;
+    private String monitor_id;
 
     public String getMonitor_id() {
         return monitor_id;

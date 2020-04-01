@@ -11,37 +11,37 @@ import com.touchkiss.dnspod.constants.URLConstants;
  */
 public class MonitorCreateRequest extends BaseRequest<MonitorCreateResponse> {
     /**
-     *  域名编号，必选
+     * 域名编号，必选
      */
     private int domain_id;
     /**
-     *  记录编号，必选
+     * 记录编号，必选
      */
     private int record_id;
     /**
-     *  监控端口，比如80，必选
+     * 监控端口，比如80，必选
      */
     private int port;
     /**
-     *  监控间隔，支持{60|180|360|}，必选
+     * 监控间隔，支持{60|180|360|}，必选
      */
     private int monitor_interval;
     /**
-     *  监控主机头，比如 www.dnspod.cn，必选
+     * 监控主机头，比如 www.dnspod.cn，必选
      */
     private String host;
     /**
-     *  监控类型，支持{http|https|cname|url}，必选
+     * 监控类型，支持{http|https|cname|url}，必选
      */
     private String monitor_type;
     /**
-     *  监控路径，比如/，必选
+     * 监控路径，比如/，必选
      */
     private String monitor_path;
     /**
      * 监控节点，用,分隔多个，只能选择列表中的节点，并且有数量限制，必选。支持的节点有（ctc: 上海电信, cuc: 深圳联通, ctc-2: 深圳电信, cuc-2: 上海联通, cmc-2: 深圳移动, ctc-3: 成都电信, cuc-4: 天津联通, cmc-4: 天津移动）
      */
-    private String points ;
+    private String points;
     /**
      * 宕机备用，必选，支持任选以下选项中的一个：
      * pass 只监控，不切换
@@ -50,29 +50,29 @@ public class MonitorCreateRequest extends BaseRequest<MonitorCreateResponse> {
      * auto 智能切换
      * 用逗号分隔的IP 设置备用IP
      */
-    private String bak_ip ;
+    private String bak_ip;
     /**
-     *  {yes|no} 宕机切换后是否修改ttl，可选，默认为 no
+     * {yes|no} 宕机切换后是否修改ttl，可选，默认为 no
      */
     private String keep_ttl;
     /**
-     *  短信通知，me域名所有者，share共享用户，用,分隔多选择，比如me,share, 可选
+     * 短信通知，me域名所有者，share共享用户，用,分隔多选择，比如me,share, 可选
      */
     private String sms_notice;
     /**
-     *  邮件通知，me域名所有者，share共享用户，用,分隔多选择，比如me,share，可选
+     * 邮件通知，me域名所有者，share共享用户，用,分隔多选择，比如me,share，可选
      */
     private String email_notice;
     /**
-     *  {yes|no}是否一个小时内只发一次通知，可选
+     * {yes|no}是否一个小时内只发一次通知，可选
      */
     private String less_notice;
     /**
-     *  可选，回调URL，宕机了会将相关的参数提交到此设置的URL，具体参考回调URL说明，可选
+     * 可选，回调URL，宕机了会将相关的参数提交到此设置的URL，具体参考回调URL说明，可选
      */
     private String callback_url;
     /**
-     *  可选，回调密钥，如果设置了回调URL请设置此参数以保证安全，可选
+     * 可选，回调密钥，如果设置了回调URL请设置此参数以保证安全，可选
      */
     private String callback_key;
 

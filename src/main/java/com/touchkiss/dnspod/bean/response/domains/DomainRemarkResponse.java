@@ -14,14 +14,15 @@ public class DomainRemarkResponse extends BaseResponse {
         if (msg == null) {
             try {
                 return StatusCode.valueOf("_" + getStatus().getCode().replace("-", "n")).getDetails();
-            }catch (Exception e){
+            } catch (Exception e) {
 
             }
         }
         return null;
     }
-    public enum StatusCode{
-        _6(6,"域名ID错误");
+
+    public enum StatusCode {
+        _6(6, "域名ID错误");
         private int code;
         private String details;
 

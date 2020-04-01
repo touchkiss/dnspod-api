@@ -4,7 +4,6 @@ import com.touchkiss.dnspod.bean.request.BaseRequest;
 import com.touchkiss.dnspod.bean.response.BaseResponse;
 import com.touchkiss.dnspod.utils.GsonUtil;
 import com.touchkiss.dnspod.utils.HttpUtil;
-import com.touchkiss.dnspod.utils.MapUtil;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -87,7 +86,7 @@ public class DnspodClient implements BaseClient {
             field.setAccessible(true);
             try {
                 Object value = field.get(object);
-                if (value!=null){
+                if (value != null) {
                     String key = field.getName();
                     result.put(key, value);
                 }

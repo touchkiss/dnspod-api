@@ -22,7 +22,7 @@ public class BatchDetailResponse extends BaseResponse {
     }
 
     public enum StatusCode {
-        _8(8,"数据为空，没有查到该任务");
+        _8(8, "数据为空，没有查到该任务");
         private int code;
         private String details;
 

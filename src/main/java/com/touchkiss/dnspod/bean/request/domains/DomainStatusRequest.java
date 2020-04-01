@@ -21,6 +21,7 @@ public class DomainStatusRequest extends BaseRequest<DomainStatusResponse> {
      * 域名状态，”enable” 、”disable” 分别代表启用和暂停
      */
     private String status;
+
     @Override
     public Class getRequestClass() {
         return this.getClass();

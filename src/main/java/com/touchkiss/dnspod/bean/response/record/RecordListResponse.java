@@ -1,6 +1,5 @@
 package com.touchkiss.dnspod.bean.response.record;
 
-import com.google.gson.annotations.SerializedName;
 import com.touchkiss.dnspod.bean.response.BaseResponse;
 
 import java.util.List;
@@ -124,7 +123,7 @@ public class RecordListResponse extends BaseResponse {
         private String ext_status;
         private int ttl;
         /**
-         *  域名等级对应的ns服务器地址
+         * 域名等级对应的ns服务器地址
          */
         private List<String> dnspod_ns;
 
@@ -280,12 +279,12 @@ public class RecordListResponse extends BaseResponse {
          */
         private String ttl;
         /**
-         *  记录值
+         * 记录值
          */
         private String value;
         private Object weight;
         /**
-         *  记录的 MX 记录值, 非 MX 记录类型，默认为 0
+         * 记录的 MX 记录值, 非 MX 记录类型，默认为 0
          */
         private String mx;
         /**
@@ -311,7 +310,7 @@ public class RecordListResponse extends BaseResponse {
          */
         private String remark;
         /**
-         *  记录最后更新时间
+         * 记录最后更新时间
          */
         private String updated_on;
         /**

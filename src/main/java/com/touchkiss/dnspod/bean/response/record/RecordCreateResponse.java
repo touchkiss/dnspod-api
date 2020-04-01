@@ -23,50 +23,6 @@ public class RecordCreateResponse extends BaseResponse {
         this.record = record;
     }
 
-    public static class RecordBean {
-        /**
-         * id : 16894439
-         * name : @
-         * status : enable
-         */
-        /**
-         * 记录ID, 即为 record_id
-         */
-        private String id;
-        /**
-         * 添加的字域名
-         */
-        private String name;
-        /**
-         * 域名记录的状态
-         */
-        private String status;
-
-        public String getId() {
-            return id;
-        }
-
-        public void setId(String id) {
-            this.id = id;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public String getStatus() {
-            return status;
-        }
-
-        public void setStatus(String status) {
-            this.status = status;
-        }
-    }
-
     @Override
     public String statusDetail() {
         String msg = super.statusDetail();
@@ -125,6 +81,50 @@ public class RecordCreateResponse extends BaseResponse {
 
         public void setDetails(String details) {
             this.details = details;
+        }
+    }
+
+    public static class RecordBean {
+        /**
+         * id : 16894439
+         * name : @
+         * status : enable
+         */
+        /**
+         * 记录ID, 即为 record_id
+         */
+        private String id;
+        /**
+         * 添加的字域名
+         */
+        private String name;
+        /**
+         * 域名记录的状态
+         */
+        private String status;
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getStatus() {
+            return status;
+        }
+
+        public void setStatus(String status) {
+            this.status = status;
         }
     }
 }

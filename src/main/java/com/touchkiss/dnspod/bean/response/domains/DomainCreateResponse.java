@@ -29,11 +29,41 @@ public class DomainCreateResponse extends BaseResponse {
         if (msg == null) {
             try {
                 return StatusCode.valueOf("_" + getStatus().getCode().replace("-", "n")).getDetails();
-            }catch (Exception e){
+            } catch (Exception e) {
 
             }
         }
         return null;
+    }
+
+    public enum StatusCode {
+        _6(6, "域名无效"),
+        _7(7, "域名已存在"),
+        _11(11, "域名已经存在并且是其它域名的别名"),
+        _12(12, "域名已经存在并且您没有权限管理");
+        private int code;
+        private String details;
+
+        StatusCode(int code, String details) {
+            this.code = code;
+            this.details = details;
+        }
+
+        public int getCode() {
+            return code;
+        }
+
+        public void setCode(int code) {
+            this.code = code;
+        }
+
+        public String getDetails() {
+            return details;
+        }
+
+        public void setDetails(String details) {
+            this.details = details;
+        }
     }
 
     public static class DomainBean {
@@ -69,36 +99,6 @@ public class DomainCreateResponse extends BaseResponse {
 
         public void setDomain(String domain) {
             this.domain = domain;
-        }
-    }
-
-    public enum StatusCode {
-        _6(6, "域名无效"),
-        _7(7, "域名已存在"),
-        _11(11, "域名已经存在并且是其它域名的别名"),
-        _12(12, "域名已经存在并且您没有权限管理");
-        private int code;
-        private String details;
-
-        StatusCode(int code, String details) {
-            this.code = code;
-            this.details = details;
-        }
-
-        public int getCode() {
-            return code;
-        }
-
-        public void setCode(int code) {
-            this.code = code;
-        }
-
-        public String getDetails() {
-            return details;
-        }
-
-        public void setDetails(String details) {
-            this.details = details;
         }
     }
 }

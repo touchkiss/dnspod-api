@@ -23,50 +23,6 @@ public class RecordDdnsResponse extends BaseResponse {
         this.record = record;
     }
 
-    public static class RecordBean {
-        /**
-         * id : 16909160
-         * name : @
-         * value : 111.111.111.111
-         */
-        /**
-         * 记录ID, 即为 record_id
-         */
-        private int id;
-        /**
-         * 子域名
-         */
-        private String name;
-        /**
-         * 记录值
-         */
-        private String value;
-
-        public int getId() {
-            return id;
-        }
-
-        public void setId(int id) {
-            this.id = id;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public String getValue() {
-            return value;
-        }
-
-        public void setValue(String value) {
-            this.value = value;
-        }
-    }
-
     @Override
     public String statusDetail() {
         String msg = super.statusDetail();
@@ -115,6 +71,50 @@ public class RecordDdnsResponse extends BaseResponse {
 
         public void setDetails(String details) {
             this.details = details;
+        }
+    }
+
+    public static class RecordBean {
+        /**
+         * id : 16909160
+         * name : @
+         * value : 111.111.111.111
+         */
+        /**
+         * 记录ID, 即为 record_id
+         */
+        private int id;
+        /**
+         * 子域名
+         */
+        private String name;
+        /**
+         * 记录值
+         */
+        private String value;
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        public void setValue(String value) {
+            this.value = value;
         }
     }
 }

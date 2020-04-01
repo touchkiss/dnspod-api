@@ -20,6 +20,7 @@ public class DomainStatusResponse extends BaseResponse {
         }
         return null;
     }
+
     public enum StatusCode {
         _n15(-15, "域名已被封禁"),
         _6(6, "域名ID错误"),

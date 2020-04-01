@@ -35,6 +35,48 @@ public class MonitorListsubdomianResponse extends BaseResponse {
         this.subdomain = subdomain;
     }
 
+    @Override
+    public String statusDetail() {
+        String msg = super.statusDetail();
+        if (msg == null) {
+            try {
+                return StatusCode.valueOf("_" + getStatus().getCode().replace("-", "n")).getDetails();
+            } catch (Exception e) {
+
+            }
+        }
+        return null;
+    }
+
+    public enum StatusCode {
+        _6(6, "当前域名有误，请返回重新操作"),
+        _7(7, "域名编号错误"),
+        _8(8, "此域名没有任何记录");
+        private int code;
+        private String details;
+
+        StatusCode(int code, String details) {
+            this.code = code;
+            this.details = details;
+        }
+
+        public int getCode() {
+            return code;
+        }
+
+        public void setCode(int code) {
+            this.code = code;
+        }
+
+        public String getDetails() {
+            return details;
+        }
+
+        public void setDetails(String details) {
+            this.details = details;
+        }
+    }
+
     public static class DomainBean {
         /**
          * id : 2317346
@@ -88,48 +130,6 @@ public class MonitorListsubdomianResponse extends BaseResponse {
 
         public void setOwner(String owner) {
             this.owner = owner;
-        }
-    }
-
-    @Override
-    public String statusDetail() {
-        String msg = super.statusDetail();
-        if (msg == null) {
-            try {
-                return StatusCode.valueOf("_" + getStatus().getCode().replace("-", "n")).getDetails();
-            } catch (Exception e) {
-
-            }
-        }
-        return null;
-    }
-
-    public enum StatusCode {
-        _6(6, "当前域名有误，请返回重新操作"),
-        _7(7, "域名编号错误"),
-        _8(8, "此域名没有任何记录");
-        private int code;
-        private String details;
-
-        StatusCode(int code, String details) {
-            this.code = code;
-            this.details = details;
-        }
-
-        public int getCode() {
-            return code;
-        }
-
-        public void setCode(int code) {
-            this.code = code;
-        }
-
-        public String getDetails() {
-            return details;
-        }
-
-        public void setDetails(String details) {
-            this.details = details;
         }
     }
 }

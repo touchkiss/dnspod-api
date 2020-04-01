@@ -20,6 +20,7 @@ public class MonitorGethistoryRequest extends BaseRequest<MonitorGethistoryRespo
      * 获取最近多少个小时的记录
      */
     private int hours;
+
     @Override
     public Class getRequestClass() {
         return this.getClass();

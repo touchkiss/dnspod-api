@@ -51,7 +51,7 @@ public class RecordCreateRequest extends BaseRequest<RecordCreateResponse> {
     private int ttl;
     /**
      * 非必须
-     *  [“enable”, “disable”]，记录初始状态，默认为”enable”，如果传入”disable”，解析不会生效，也不会验证负载均衡的限制，可选
+     * [“enable”, “disable”]，记录初始状态，默认为”enable”，如果传入”disable”，解析不会生效，也不会验证负载均衡的限制，可选
      */
     private String status;
     /**

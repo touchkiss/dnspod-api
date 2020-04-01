@@ -36,6 +36,38 @@ public class DomainLockResponse extends BaseResponse {
         return null;
     }
 
+    public enum StatusCode {
+        _n15(-15, "域名已被封禁"),
+        _6(6, "域名ID错误"),
+        _7(7, "非域名所有者"),
+        _8(8, "锁定天数错误"),
+        _13(13, "当前域名有误，请返回重新操作"),
+        _21(21, "域名已经被锁定");
+        private int code;
+        private String details;
+
+        StatusCode(int code, String details) {
+            this.code = code;
+            this.details = details;
+        }
+
+        public int getCode() {
+            return code;
+        }
+
+        public void setCode(int code) {
+            this.code = code;
+        }
+
+        public String getDetails() {
+            return details;
+        }
+
+        public void setDetails(String details) {
+            this.details = details;
+        }
+    }
+
     public static class LockBean {
         /**
          * domain_id : 2059079
@@ -77,38 +109,6 @@ public class DomainLockResponse extends BaseResponse {
 
         public void setLock_end(String lock_end) {
             this.lock_end = lock_end;
-        }
-    }
-
-    public enum StatusCode {
-        _n15(-15, "域名已被封禁"),
-        _6(6, "域名ID错误"),
-        _7(7, "非域名所有者"),
-        _8(8, "锁定天数错误"),
-        _13(13, "当前域名有误，请返回重新操作"),
-        _21(21, "域名已经被锁定");
-        private int code;
-        private String details;
-
-        StatusCode(int code, String details) {
-            this.code = code;
-            this.details = details;
-        }
-
-        public int getCode() {
-            return code;
-        }
-
-        public void setCode(int code) {
-            this.code = code;
-        }
-
-        public String getDetails() {
-            return details;
-        }
-
-        public void setDetails(String details) {
-            this.details = details;
         }
     }
 }

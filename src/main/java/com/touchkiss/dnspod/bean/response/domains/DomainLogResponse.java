@@ -10,7 +10,7 @@ import java.util.List;
  * @author Touchkiss
  */
 public class DomainLogResponse extends BaseResponse {
-    private List<String>log;
+    private List<String> log;
 
     public List<String> getLog() {
         return log;
@@ -19,6 +19,7 @@ public class DomainLogResponse extends BaseResponse {
     public void setLog(List<String> log) {
         this.log = log;
     }
+
     @Override
     public String statusDetail() {
         String msg = super.statusDetail();
@@ -31,11 +32,12 @@ public class DomainLogResponse extends BaseResponse {
         }
         return null;
     }
-    public enum StatusCode{
-        _n15(-15,"域名已被封禁"),
-        _6(6,"域名ID错误"),
-        _7(7,"非域名所有者"),
-        _8(8,"域名无效");
+
+    public enum StatusCode {
+        _n15(-15, "域名已被封禁"),
+        _6(6, "域名ID错误"),
+        _7(7, "非域名所有者"),
+        _8(8, "域名无效");
         private int code;
         private String details;
 

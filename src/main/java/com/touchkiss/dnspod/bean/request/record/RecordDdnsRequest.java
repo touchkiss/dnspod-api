@@ -11,28 +11,28 @@ import com.touchkiss.dnspod.constants.URLConstants;
  */
 public class RecordDdnsRequest extends BaseRequest<RecordDdnsResponse> {
     /**
-     *  或 domain, 分别对应域名ID和域名, 提交其中一个即可
+     * 或 domain, 分别对应域名ID和域名, 提交其中一个即可
      */
     private int domain_id;
     private String domain;
     /**
-     *  记录ID，必选
+     * 记录ID，必选
      */
     private String record_id;
     /**
-     *  主机记录，如 www
+     * 主机记录，如 www
      */
     private String sub_domain;
     /**
-     *  记录线路，通过API记录线路获得，中文，比如：默认，必选
+     * 记录线路，通过API记录线路获得，中文，比如：默认，必选
      */
     private String record_line;
     /**
-     *  线路的ID，通过API记录线路获得，英文字符串，比如：‘10=1’ 【record_line 和 record_line_id 二者传其一即可，系统优先取 record_line_id】
+     * 线路的ID，通过API记录线路获得，英文字符串，比如：‘10=1’ 【record_line 和 record_line_id 二者传其一即可，系统优先取 record_line_id】
      */
     private String record_line_id;
     /**
-     *  IP地址，例如：6.6.6.6，可选
+     * IP地址，例如：6.6.6.6，可选
      */
     private String value;
 
