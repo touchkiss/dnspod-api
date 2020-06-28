@@ -27,7 +27,7 @@ public class DomainListRequest extends BaseRequest<DomainListResponse> {
      * 非必须
      * 记录开始的偏移, 第一条记录为 0, 依次类推
      */
-    private int offest;
+    private int offset;
     /**
      * 非必须
      * 要获取的域名数量, 比如获取20个, 则为20
@@ -52,12 +52,12 @@ public class DomainListRequest extends BaseRequest<DomainListResponse> {
         this.type = type;
     }
 
-    public int getOffest() {
-        return offest;
+    public int getOffset() {
+        return offset;
     }
 
-    public void setOffest(int offest) {
-        this.offest = offest;
+    public void setOffset(int offset) {
+        this.offset = offset;
     }
 
     public int getLength() {

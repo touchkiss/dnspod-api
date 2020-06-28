@@ -88,7 +88,7 @@ public class DnspodClient implements BaseClient {
                 Object value = field.get(object);
                 if (value != null) {
                     String key = field.getName();
-                    result.put(key, value);
+                    result.put(key, value.toString());
                 }
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
